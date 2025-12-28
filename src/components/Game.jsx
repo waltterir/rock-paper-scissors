@@ -1,37 +1,42 @@
 import { useState } from "react";
 
 function Game() {
-  const [playerChoice, setPlayerChoice] = useState();
-  const [computerChoice, setComputerChoice] = useState();
+  const [playerChoice, setPlayerChoice] = useState("");
+  const [computerChoice, setComputerChoice] = useState("");
   const [score, setScore] = useState();
   const [gameResult, setGameResult] = useState();
 
-  const choice = ["ROCK", "PAPER", "SCISSORS"];
+  const choices = ["ROCK", "PAPER", "SCISSORS"];
+  const random = choices[Math.floor(Math.random() * choices.length)];
 
-  function handleClick() {
-    alert("clicked");
+  function handleClick(choices) {
+    setPlayerChoice(choices);
+    setComputerChoice(random);
   }
 
   return (
     <div>
       <div className="header">
-        <h1>Rock Paper Scissors</h1>
+        <h1>Rock Paper Scissors Game</h1>
       </div>
       <div>
         <div className="buttons">
-          <button className="player-rock" onClick={handleClick}>
+          <button className="rock-btn" onClick={() => handleClick("ROCK")}>
             Rock
           </button>
-          <button className="player-paper" onClick={handleClick}>
+          <button className="paper-btn" onClick={() => handleClick("PAPER")}>
             Paper
           </button>
-          <button className="player-scissors" onClick={handleClick}>
+          <button
+            className="scissors-btn"
+            onClick={() => handleClick("SCISSORS")}
+          >
             Scissors
           </button>
         </div>
         <div className="choices">
-          <h3>Your choice: </h3>
-          <h3>Computer choice: </h3>
+          <h4>Your choice: {playerChoice}</h4>
+          <h4>Computer choice: {computerChoice}</h4>
         </div>
         <div className="scores">
           <h2>Your score: </h2>
