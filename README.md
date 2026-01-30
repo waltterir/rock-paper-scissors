@@ -1,24 +1,23 @@
-# Kivi Paperi Sakset
+# Rock Paper Scissors
 
-Pieni React-harjoitusprojekti, jossa toteutettu klassinen kivi-paperi-sakset -peli.
+A small React practice project that implements the classic Rock–Paper–Scissors game.
 
-## Kuvaus
+## Description
 
-Projekti on tehty Reactin perusteiden harjoitteluun, erityisesti tilanhallinnan,
-tapahtumankäsittelyn ja sivuvaikutusten (useEffect) ymmärtämiseen
+This project was created to practice React fundamentals, especially state management, event handling, and side effects (useEffect).
 
-## Teknologiat
+## Technologies
 
 - React
 - JavaScript
 
-## Ominaisuudet
+## Features
 
-- Pelaaja vs tietokone -pelilogiikka
-- Tilanhallinta useState-hookilla
-- Pelilogiikka toteutettu useEffectillä
-- Pistelaskuri ja tuloksen näyttäminen
+- Player vs computer game logic
+- State management with the useState hook
+- Game logic handled with useEffect
+- Score tracking and result display
 
-## Tila
+## Status
 
-Oppimisprojekti
+Learning project
