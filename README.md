@@ -40,10 +40,10 @@ http://localhost:5173/
 
 ## What I Learned
 
-Using React hooks (useState, useEffect)
+- Using React hooks (useState, useEffect)
 
-Handling click events and user input
+- Handling click events and user input
 
-Implementing conditional game logic
+- Implementing conditional game logic
 
-Managing derived state in React
+- Managing derived state in React
